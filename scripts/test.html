@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CEP Test</title>
+</head>
+<body>
+  <h1>CEP Search Test</h1>
+  <p>Check the console (F12) for results</p>
+  
+  <script>
+    function searchCEP(cep) {
+      // Clean the CEP
+      let cleancep = cep.replace(/\D/g, '');
+      
+      // Create the URL
+      let url = `https://viacep.com.br/ws/${cleancep}/json/`;
+      
+      // Make the request
+      fetch(url)
+        .then(response => response.json())
+        .then(address => {
+          console.log(address);
+        })
+        .catch(error => {
+          console.log("Error:", error);
+        });
+    }
+    
+    // Run the test automatically
+    searchCEP("31110390");
+  </script>
+</body>
+</html>
