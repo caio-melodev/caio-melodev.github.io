@@ -6,7 +6,7 @@
         <title>Busca Cep</title>
         <link rel="icon" href="./assets/logo.png" type="image/png" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
         <link rel="stylesheet" href="./styles/style.css" />
     </head>
     <body>
@@ -16,27 +16,23 @@
                     <img src="./assets/logo.png" alt="logo" class="w-20" />
                 </a>
                 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                    <a class="mr-5 text-violet-900 hover:text-violet-900 cursor-pointer">
-                        Buscar 
-                    </a>
-                    <a href="https://github.com/caio-melodev/cepsearch/" target="_blank" class="mr-5 hover:text-violet-900 cursor-pointer">
-                        Repositório 
-                        <i class='bx bx-link-external' ></i>
-                    </a>
+                    <a class="mr-5 text-violet-900 hover:text-violet-900 cursor-pointer">Home</a>
+                    <a class="mr-5 hover:text-violet-900 cursor-pointer">Sobre</a>
+                    <a class="mr-5 hover:text-violet-900 cursor-pointer">Feedback</a>
                 </nav>
-                <a href="https://viacep.com.br" target="_blank" class="inline-flex items-center bg-violet-100 border-0 py-1 px-3 focus:outline-none hover:bg-violet-200 cursor-pointer rounded text-base mt-4 md:mt-0">
+                <button class="inline-flex items-center bg-violet-100 border-0 py-1 px-3 focus:outline-none hover:bg-violet-200 cursor-pointer rounded text-base mt-4 md:mt-0">
                     Acessar Doc API
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
-                </a>
+                </button>
             </div>
         </header>
 
         <main class="flex items-center justify-center bg-gray-100 px-4 py-8 mx-auto rounded mb-5">
             <div class="bg-white rounded-lg w-full max-w-xl p-8">
                 <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 text-violet -700">
-                    <i class='bx bx-search-alt-2'></i>
+                    <box-icon name="search-alt-2"></box-icon>
                     Buscar CEP
                 </h2>
                 <form id="cep-form" class="space-y-4">
