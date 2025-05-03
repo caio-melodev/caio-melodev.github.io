@@ -1,4 +1,6 @@
-function searchCEP(cep) {
+function searchCEP(event) {
+    event.preventDefault();    
+    var cep=document.getElementById("cep").value
     // remove non-numeric characters
     let cleancep = cep.replace(/\D/g, '');
     // check lenght is ocurring on front
@@ -24,13 +26,14 @@ function searchCEP(cep) {
             document.getElementById("res-siafi").textContent = api.siafi;
             //console.log("Street:", address.logradouro);
             //console.log("City:", address.localidade);
-            
+             document.getElementById("cep").value=null
         })
         //error response
         .catch(error => {
             console.log("Error:", error);
             throw error;
         });
+       
 }
 
 

@@ -40,7 +40,7 @@
                     <i class='bx bx-search-alt-2'></i>
                     Buscar CEP
                 </h2>
-                <form id="cep-form" class="space-y-4">
+                <div id="cep-form" class="space-y-4">
                     <div>
                         <label for="cep" class="block text-gray-700 text-sm font-medium">Digite o CEP:</label>
                         <input
@@ -53,7 +53,7 @@
                             required
                         />
                     </div>
-                    <button onclick="searchCEP('31110390')" class="cursor-pointer w-full bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2 px-4 rounded shadow">
+                    <button onclick="searchCEP(event)" class="cursor-pointer w-full bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2 px-4 rounded shadow">
                         Buscar
                     </button>
                 </form>
