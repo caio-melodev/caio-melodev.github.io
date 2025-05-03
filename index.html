@@ -6,6 +6,7 @@
         <title>Busca Cep</title>
         <link rel="icon" href="./assets/logo.png" type="image/png" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="./scripts/script.js"></script>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="./styles/style.css" />
     </head>
@@ -52,7 +53,7 @@
                             required
                         />
                     </div>
-                    <button type="submit" class="w-full bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2 px-4 rounded shadow">
+                    <button onclick="searchCEP('31110390')" class="cursor-pointer w-full bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2 px-4 rounded shadow">
                         Buscar
                     </button>
                 </form>
